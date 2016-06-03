@@ -15,7 +15,10 @@ function getQueryParams() {
 
 Base64url = {
   encode: function(input) {
-    return btoa(input).replace('+', '-').replace('/', '_').replace('=', '');
+    return btoa(input)
+        .replace(/\+/g, '-')
+        .replace(/\//g, '_')
+        .replace(/=+$/, '');
   }
 }
 
