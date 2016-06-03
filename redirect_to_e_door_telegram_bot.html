@@ -13,8 +13,14 @@ function getQueryParams() {
     return params;
 };
 
+Base64url = {
+  encode: function(input) {
+    return btoa(input).replace('+', '-').replace('/', '_').replace('=', '');
+  }
+}
+
 var params = getQueryParams();
 
-window.location="https://telegram.me/eDoorBot?start=" + params["code"];
+window.location="https://telegram.me/eDoorBot?start=" + Base64url.encode(params["code"]);
 
 </script>
