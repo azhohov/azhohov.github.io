@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>eDoorBot</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="assets/styles/primer.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+<main class="wrap">
+    <p>
+        Для подтверждения адреса электронной почты нужно отправить боту сообщение с текстом, который указан ниже
+    </p>
+    <div class="input-group">
+        <input id="foo" title="message" type="text" value="">
+        <span class="input-group-button">
+            <button class="btn" type="button" data-clipboard-target="#foo">
+                <img class="clippy" src="assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+            </button>
+        </span>
+    </div>
+</main>
+<script src="assets/scripts/clipboard.min.js"></script>
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/tooltips.js"></script>
+</body>
+</html>

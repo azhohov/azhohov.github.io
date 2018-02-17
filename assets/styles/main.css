@@ -1,0 +1,27 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.wrap {
+    margin: 0 auto 90px;
+    max-width: 540px;
+    padding: 0 15px;
+}
+
+.clippy {
+    margin-top: -3px;
+    position: relative;
+    top: 3px;
+}
+
+.btn[disabled] .clippy {
+    opacity: .3;
+}
+
+.form-actions {
+    margin-top: 15px;
+}
+
+.form-actions .btn {
+    float: left;
+}
